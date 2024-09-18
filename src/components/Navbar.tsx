@@ -7,7 +7,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="hidden lg:block text-primary-900 dark:text-primary-300 bg-primary-300 dark:bg-primary-900 lg:bg-inherit lg:dark:bg-inherit sticky top-0 z-50">
+    <nav className="hidden lg:block text-primary-900 dark:text-primary-300 bg-primary-300 dark:bg-primary-900 lg:bg-gray-200 lg:dark:bg-gray-900 sticky top-0 z-50">
       <div className="lg:container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <motion.div
