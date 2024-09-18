@@ -1,24 +1,8 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { FiArrowDownCircle } from "react-icons/fi";
 import SkillsSwitcher from "../components/SkillSwitcher";
 
 function Home() {
-  const skills = [
-    "Backend Web Developer",
-    "Mobile App Developer",
-    "Database Administrator",
-  ];
-
-  const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
-    }, 2000); // Change every 2 seconds
-
-    return () => clearInterval(interval); // Clean up interval on component unmount
-  }, [skills.length]);
 
   return (
     <div className="container mx-auto px-4">

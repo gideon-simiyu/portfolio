@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import use4ColorScheme from "../hooks/useColorScheme";
 
 function ThemeSwitcher() {
-  const [theme, setTheme] = use4ColorScheme();
+  const {theme, setTheme} = use4ColorScheme();
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");

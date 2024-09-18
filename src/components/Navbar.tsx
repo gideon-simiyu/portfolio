@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import ThemeSwitcher from "./ThemeSwitcher"; // Assuming this is your custom theme switcher component

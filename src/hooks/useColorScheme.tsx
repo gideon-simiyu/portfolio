@@ -23,7 +23,7 @@ function useColorScheme() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return [theme, setTheme];
+  return { theme, setTheme };
 }
 
 export default useColorScheme;

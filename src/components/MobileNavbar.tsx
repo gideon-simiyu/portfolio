@@ -1,15 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
 import { FiHome, FiPhone, FiTool, FiUser } from "react-icons/fi";
 
 function MobileNavbar() {
   const [activeTab, setActiveTab] = useState("home");
   const pathname = useLocation().pathname;
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
 
   useEffect(() => {
     if (pathname == "/") {
