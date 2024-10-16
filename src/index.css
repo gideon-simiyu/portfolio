@@ -10,14 +10,27 @@
     .nav-link.active{
         @apply border-appprimary-900 dark:text-appprimary-300 dark:border-appprimary-300 text-appprimary-900 border-b-2
     }
+
+    .text-gradient{
+        @apply bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent hover:text-primary hover:scale-110 ease-in-out duration-500
+    }
+
+    .section-header{
+        @apply text-center my-10 text-3xl uppercase text-gradient font-semibold
+    }
 }
 
 
-.background{
+body{
     background-image: radial-gradient(circle, #fff 2px, rgba(0,0,0,0) 2px);
-    height: 100%;
-    min-height: 100dvh;
+    height: 100dvh;
     background-size: 100px 100px;
+    overflow: auto;
+}
+
+html{
+    background-image: url("/images/background.webp");
+    overflow: hidden;
 }
 
 .bg-image{

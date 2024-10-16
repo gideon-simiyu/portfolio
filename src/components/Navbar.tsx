@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="navbar rounded-box flex w-full items-center justify-between gap-2 shadow">
+    <nav className="navbar flex w-full items-center justify-between gap-2 h-16 shadow">
       <div className="navbar-start max-sm:w-1/4">
         <a
           className="link text-nowrap text-base-content/90 link-primary text-primary text-xl font-semibold no-underline"
@@ -11,7 +11,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-center max-sm:hidden">
         <ul className="menu menu-horizontal p-0 font-medium">
-          <li>
+          <li className="active">
             <a href="#">Home</a>
           </li>
           <li>

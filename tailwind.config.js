@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
 
 export default {
   darkMode: "class",
@@ -17,6 +17,23 @@ export default {
       }
     },
   },
+
+  flyonui: {
+    themes: [
+      {
+        mytheme: {
+          primary: colors.emerald["600"],
+          secondary: colors.amber["600"],
+          accent: "#37cdbe",
+          neutral: "#3d4451",
+          "base-100": colors.slate["800"],
+        }
+      },
+      "dark",
+      "gourmet"
+    ]
+  },
+
   plugins: [
     require("flyonui"),
     require("flyonui/plugin")
