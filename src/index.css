@@ -4,10 +4,24 @@
 
 @layer components{
     .nav-link{
-        @apply hover:text-primary-600 transition-colors text-xl p-2 text-center text-nowrap w-fit
+        @apply hover:text-appprimary-600 transition-colors text-xl p-2 text-center text-nowrap w-fit
     }
     
     .nav-link.active{
-        @apply border-primary-900 dark:text-primary-300 dark:border-primary-300 text-primary-900 border-b-2
+        @apply border-appprimary-900 dark:text-appprimary-300 dark:border-appprimary-300 text-appprimary-900 border-b-2
     }
+}
+
+
+.background{
+    background-image: radial-gradient(circle, #fff 2px, rgba(0,0,0,0) 2px);
+    height: 100%;
+    min-height: 100dvh;
+    background-size: 100px 100px;
+}
+
+.bg-image{
+    position: absolute;
+    top: -2rem;
+    z-index: -10;
 }

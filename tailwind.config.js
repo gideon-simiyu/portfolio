@@ -6,15 +6,19 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flyonui/dist/js/*.js"
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
+        appprimary: {
           ...colors.blue
         }
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("flyonui"),
+    require("flyonui/plugin")
+  ],
 }
