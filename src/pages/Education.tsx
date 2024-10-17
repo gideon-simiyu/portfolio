@@ -14,11 +14,13 @@ function Experience() {
             </div>
           </div>
           <div className="timeline-end ms-4 mb-8">
-            <div className="card">
+            <div className="card max-w-lg backdrop-blur opacity-80 hover:opacity-100 ease-in-out duration-500">
               <div className="card-body gap-4">
                 <h5 className="card-title text-lg text-primary text-pretty">
                   Maseno University
                 </h5>
+                <p>Bachelor of Science in Computer Science</p>
+                <p className="text-secondary">Second class Upper Division</p>
               </div>
             </div>
           </div>
@@ -38,11 +40,13 @@ function Experience() {
             </div>
           </div>
           <div className="timeline-start me-4 mb-8">
-            <div className="card">
+            <div className="card max-w-lg backdrop-blur opacity-80 hover:opacity-100 ease-in-out duration-500">
               <div className="card-body gap-4">
                 <h5 className="card-title text-lg text-primary">
                   Bikeke Boys Secondary
                 </h5>
+                <p>Kenya Certificate of Secondary Education</p>
+                <p className="text-secondary">B+</p>
               </div>
             </div>
           </div>
@@ -62,11 +66,13 @@ function Experience() {
             </div>
           </div>
           <div className="timeline-end ms-4 mb-8">
-            <div className="card bg-opacity-60 backdrop-blur-sm">
+            <div className="card max-w-lg backdrop-blur opacity-80 hover:opacity-100 ease-in-out duration-500">
               <div className="card-body gap-4">
                 <h5 className="card-title text-lg text-primary text-pretty">
                   Bikeke Primary
                 </h5>
+                <p>Kenya Certificate of Primary</p>
+                <p className="text-secondary">352</p>
               </div>
             </div>
           </div>

@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 export default function Navbar() {
+
+
+  const [pathname, setPathname] = useState("home")
+
+  const changePathname = (path : string) => (event) =>{
+    setPathname(path);
+  }
+
   return (
     <nav className="navbar flex w-full items-center justify-between gap-2 h-16 shadow">
       <div className="navbar-start max-sm:w-1/4">
@@ -12,16 +22,34 @@ export default function Navbar() {
       <div className="navbar-center max-sm:hidden">
         <ul className="menu menu-horizontal p-0 font-medium">
           <li className="active">
-            <a href="#">Home</a>
+            <a href="#home" onClick={changePathname("home")} className={`scrollspy-active:active ${pathname == "home" && "active"}`}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">Skils</a>
+            <a href="#skills" onClick={changePathname("skills")} className={`scrollspy-active:active ${pathname == "skills" && "active"}`}>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects" onClick={changePathname("projects")} className={`scrollspy-active:active ${pathname == "projects" && "active"}`}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a href="#experience" onClick={changePathname("experience")} className={`scrollspy-active:active ${pathname == "experience" && "active"}`}>
+              Work Experience
+            </a>
+          </li>
+          <li>
+            <a href="#education" onClick={changePathname("education")} className={`scrollspy-active:active ${pathname == "education" && "active"}`}>
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" onClick={changePathname("contacts")} className={`scrollspy-active:active ${pathname == "contacts" && "active"}`}>
+              Contacts
+            </a>
           </li>
         </ul>
       </div>
@@ -43,30 +71,45 @@ export default function Navbar() {
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="dropdown-default"
+            data-scrollspy="#scrollspy-1" data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-1"
           >
-            <li>
-              <a className="dropdown-item" href="#">
+            <li className="active">
+              <a href="#home" className="scrollspy-active:active active">
                 Home
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a href="#skills" className="scrollspy-active:active">
                 Skills
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a href="#projects" className="scrollspy-active:active">
                 Projects
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
+              <a href="#education" className="scrollspy-active:active">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#experience" className="scrollspy-active:active">
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#contacts" className="scrollspy-active:active">
                 Contacts
               </a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-primary" target="_blank" href="https://forms.gle/JEMkxySNDsjrsKsb8">
+        <a
+          className="btn btn-primary"
+          target="_blank"
+          href="https://forms.gle/JEMkxySNDsjrsKsb8"
+        >
           <span className="">Hire me</span>
           <span className="icon-[tabler--arrow-right]"></span>
         </a>

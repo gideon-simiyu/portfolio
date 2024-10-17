@@ -12,7 +12,7 @@
     }
 
     .text-gradient{
-        @apply bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent hover:text-primary hover:scale-110 ease-in-out duration-500
+        @apply bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent hover:text-primary ease-in-out duration-500
     }
 
     .section-header{
@@ -25,7 +25,11 @@ body{
     background-image: radial-gradient(circle, #fff 2px, rgba(0,0,0,0) 2px);
     height: 100dvh;
     background-size: 100px 100px;
-    overflow: auto;
+    overflow: hidden;
+}
+
+#root{
+    overflow: hidden;
 }
 
 html{

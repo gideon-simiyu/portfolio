@@ -2,26 +2,49 @@ import Navbar from "./components/Navbar";
 import SkillsSwitcher from "./components/SkillSwitcher";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div className="min-h-screen flex relative flex-col">
+    <div className="h-screen flex relative flex-col">
       <div className="top-0 z-20 start-0 sticky">
         <Navbar />
       </div>
 
-      <div className="flex-grow flex flex-col">
-        <div className="flex-grow bg-base-100 bg-opacity-80 flex flex-col items-center">
-          <SkillsSwitcher />
+      <div
+        className="flex-grow flex flex-col vertical-scrollbar"
+        id="scrollspy-scrollable-parent-1"
+      >
+        <div id="scrollspy-1" className="space-y-4">
+          <div className="flex-grow bg-base-100 bg-opacity-80 flex flex-col items-center">
+            <div className="mt-5" id="home">
+              <SkillsSwitcher />
+            </div>
 
-          <div id="experience" className="mt-12">
-            <h5 className="section-header">Work Experience</h5>
-            <Experience />
-          </div>
+            <div className="mt-12" id="skills">
+            <h5 className="section-header">Technical Skills</h5>
+              <Skills />
+            </div>
 
-          <div id="experience" className="mt-12">
-            <h5 className="section-header">Educational Background</h5>
-            <Education />
+            <div className="mt-12" id="projects">
+            <h5 className="section-header">Personal Projects</h5>
+              <SkillsSwitcher />
+            </div>
+
+            <div id="experience" className="mt-12">
+              <h5 className="section-header">Work Experience</h5>
+              <Experience />
+            </div>
+
+            <div id="education" className="mt-12">
+              <h5 className="section-header">Educational Background</h5>
+              <Education />
+            </div>
+
+            <div className="mt-12" id="contacts">
+            <h5 className="section-header">My Contacts</h5>
+              <SkillsSwitcher />
+            </div>
           </div>
         </div>
       </div>
