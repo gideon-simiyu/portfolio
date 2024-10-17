@@ -1,7 +1,10 @@
+import AppFooter from "./components/AppFooter";
 import Navbar from "./components/Navbar";
 import SkillsSwitcher from "./components/SkillSwitcher";
+import Contacts from "./pages/Contacts";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
 function App() {
@@ -26,9 +29,11 @@ function App() {
               <Skills />
             </div>
 
+
+
             <div className="mt-12" id="projects">
             <h5 className="section-header">Personal Projects</h5>
-              <SkillsSwitcher />
+              <Projects />
             </div>
 
             <div id="experience" className="mt-12">
@@ -43,7 +48,11 @@ function App() {
 
             <div className="mt-12" id="contacts">
             <h5 className="section-header">My Contacts</h5>
-              <SkillsSwitcher />
+              <Contacts />
+            </div>
+
+            <div className="mt-12">
+              <AppFooter />
             </div>
           </div>
         </div>

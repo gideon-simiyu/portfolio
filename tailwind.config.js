@@ -14,6 +14,9 @@ export default {
         appprimary: {
           ...colors.blue
         }
+      },
+      fontFamily : {
+        afacad: "Afacad Flux"
       }
     },
   },

@@ -1,13 +1,11 @@
 import { useState } from "react";
 
 export default function Navbar() {
+  const [pathname, setPathname] = useState("home");
 
-
-  const [pathname, setPathname] = useState("home")
-
-  const changePathname = (path : string) => (_event: any) =>{
+  const changePathname = (path: string) => (_event: any) => {
     setPathname(path);
-  }
+  };
 
   return (
     <nav className="navbar flex w-full items-center justify-between gap-2 h-16 shadow">
@@ -22,32 +20,68 @@ export default function Navbar() {
       <div className="navbar-center max-sm:hidden">
         <ul className="menu menu-horizontal p-0 font-medium">
           <li className="active">
-            <a href="#home" onClick={changePathname("home")} className={`scrollspy-active:active ${pathname == "home" && "active"}`}>
+            <a
+              href="#home"
+              onClick={changePathname("home")}
+              className={`scrollspy-active:active ${
+                pathname == "home" && "active"
+              }`}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={changePathname("skills")} className={`scrollspy-active:active ${pathname == "skills" && "active"}`}>
+            <a
+              href="#skills"
+              onClick={changePathname("skills")}
+              className={`scrollspy-active:active ${
+                pathname == "skills" && "active"
+              }`}
+            >
               Skills
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={changePathname("projects")} className={`scrollspy-active:active ${pathname == "projects" && "active"}`}>
+            <a
+              href="#projects"
+              onClick={changePathname("projects")}
+              className={`scrollspy-active:active ${
+                pathname == "projects" && "active"
+              }`}
+            >
               Projects
             </a>
           </li>
           <li>
-            <a href="#experience" onClick={changePathname("experience")} className={`scrollspy-active:active ${pathname == "experience" && "active"}`}>
+            <a
+              href="#experience"
+              onClick={changePathname("experience")}
+              className={`scrollspy-active:active ${
+                pathname == "experience" && "active"
+              }`}
+            >
               Work Experience
             </a>
           </li>
           <li>
-            <a href="#education" onClick={changePathname("education")} className={`scrollspy-active:active ${pathname == "education" && "active"}`}>
+            <a
+              href="#education"
+              onClick={changePathname("education")}
+              className={`scrollspy-active:active ${
+                pathname == "education" && "active"
+              }`}
+            >
               Education
             </a>
           </li>
           <li>
-            <a href="#contacts" onClick={changePathname("contacts")} className={`scrollspy-active:active ${pathname == "contacts" && "active"}`}>
+            <a
+              href="#contacts"
+              onClick={changePathname("contacts")}
+              className={`scrollspy-active:active ${
+                pathname == "contacts" && "active"
+              }`}
+            >
               Contacts
             </a>
           </li>
@@ -66,44 +100,83 @@ export default function Navbar() {
             <span className="icon-[tabler--menu-2] dropdown-open:hidden size-5"></span>
             <span className="icon-[tabler--x] dropdown-open:block hidden size-5"></span>
           </button>
-          <ul
+          <div
             className="dropdown-menu dropdown-open:opacity-100 hidden min-w-60"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="dropdown-default"
-            data-scrollspy="#scrollspy-1" data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-1"
+            data-scrollspy="#scrollspy-1"
+            data-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-1"
           >
-            <li className="active">
-              <a href="#home" className="scrollspy-active:active active">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className="scrollspy-active:active">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="scrollspy-active:active">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="scrollspy-active:active">
-                Education
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="scrollspy-active:active">
-                Work Experience
-              </a>
-            </li>
-            <li>
-              <a href="#contacts" className="scrollspy-active:active">
-                Contacts
-              </a>
-            </li>
-          </ul>
+            <ul className="menu">
+              <li className="active">
+                <a
+                  href="#home"
+                  onClick={changePathname("home")}
+                  className={`scrollspy-active:active ${
+                    pathname == "home" && "active"
+                  }`}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  onClick={changePathname("skills")}
+                  className={`scrollspy-active:active ${
+                    pathname == "skills" && "active"
+                  }`}
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  onClick={changePathname("projects")}
+                  className={`scrollspy-active:active ${
+                    pathname == "projects" && "active"
+                  }`}
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  onClick={changePathname("experience")}
+                  className={`scrollspy-active:active ${
+                    pathname == "experience" && "active"
+                  }`}
+                >
+                  Work Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#education"
+                  onClick={changePathname("education")}
+                  className={`scrollspy-active:active ${
+                    pathname == "education" && "active"
+                  }`}
+                >
+                  Education
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contacts"
+                  onClick={changePathname("contacts")}
+                  className={`scrollspy-active:active ${
+                    pathname == "contacts" && "active"
+                  }`}
+                >
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <a
           className="btn btn-primary"

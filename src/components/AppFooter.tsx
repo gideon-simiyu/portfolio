@@ -30,12 +30,12 @@ const socialLinks = [
 
 const AppFooter = () => {
 	return (
-		<div className="container mx-auto mb-20 lg:mb-0">
-			<div className="py-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
+		<div className="w-screen mx-auto mb-20 lg:mb-0">
+			<div className="py-8 mt-20 border-t-2 border-primary">
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
+					<p className="text-3xl sm:text-4xl text-gradient mb-5">
+						Find Me On
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (
@@ -43,7 +43,7 @@ const AppFooter = () => {
 								href={link.url}
 								target="__blank"
 								key={link.id}
-								className="text-primary-800 dark:text-primary-300 cursor-pointer rounded-lg bg-primary-300 dark:bg-primary-800 hover:-translate-y-2 shadow-sm p-4 duration-300"
+								className="text-primary cursor-pointer rounded-lg bg-secondary/20 hover:-translate-y-2 shadow-sm p-4 duration-300"
 							>
 								<i className="text-xl sm:text-2xl md:text-3xl">
 									{link.icon}
