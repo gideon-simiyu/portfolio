@@ -18,7 +18,7 @@
     }
 
     .section-header{
-        @apply text-start lg:text-center my-10 text-3xl uppercase text-gradient font-semibold
+        @apply text-center my-10 text-3xl uppercase text-gradient font-semibold
     }
 }
 
