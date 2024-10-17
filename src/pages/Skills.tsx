@@ -18,7 +18,7 @@ function Skills() {
   ];
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap justify-center">
       {skills.map((skill, index) => (
         <div key={index} className=" max-w-sm p-3 flex flex-col">
           <div className="card bg-opacity-5 bg-secondary/10 flex-grow">
