@@ -48,11 +48,10 @@ function SkillsSwitcher() {
         duration: 0.9,
         delay: 0.3,
       }}
-      className="font-general-medium mt-4 text-gradient text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-relaxed text-gray-600 dark:text-gray-300"
+      className="font-general-medium mt-4 text-gradient text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-relaxed text-secondary"
     >
-      A{" "}
-      <span className="text-primary-600 dark:text-primary-400 ml-2">
-        {typedText}
+      <span className="text-primary ml-2 text-2xl border-b py-1 border-secondary">
+        A {typedText}
         <motion.span
           className="inline-block bg-primary-600 w-1 h-5 lg:h-8 -mb-1 ml-1"
           animate={{ opacity: [0, 1] }}

@@ -4,6 +4,7 @@ import SkillsSwitcher from "./components/SkillSwitcher";
 import Contacts from "./pages/Contacts";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
+import Introduction from "./pages/Introduction";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
@@ -21,7 +22,7 @@ function App() {
         <div id="scrollspy-1" className="space-y-4">
           <div className="flex-grow bg-base-100 bg-opacity-80 flex flex-col items-center">
             <div className="mt-5" id="home">
-              <SkillsSwitcher />
+              <Introduction />
             </div>
 
             <div className="mt-12" id="skills">

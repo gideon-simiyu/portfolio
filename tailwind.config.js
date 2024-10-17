@@ -25,8 +25,8 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: colors.emerald["600"],
-          secondary: colors.amber["600"],
+          primary: colors.violet["500"],
+          secondary: colors.indigo["500"],
           accent: "#37cdbe",
           neutral: "#3d4451",
           "base-100": colors.slate["800"],

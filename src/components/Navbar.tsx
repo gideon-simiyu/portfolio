@@ -117,7 +117,7 @@ export default function Navbar() {
                     pathname == "home" && "active"
                   }`}
                 >
-                  Home
+                  Introduction
                 </a>
               </li>
               <li>
@@ -183,7 +183,7 @@ export default function Navbar() {
           target="_blank"
           href="https://forms.gle/JEMkxySNDsjrsKsb8"
         >
-          <span className="">Hire me</span>
+          <span className="text-base-content">Hire me</span>
           <span className="icon-[tabler--arrow-right]"></span>
         </a>
       </div>
