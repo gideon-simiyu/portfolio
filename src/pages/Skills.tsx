@@ -20,8 +20,8 @@ function Skills() {
   return (
     <div className="flex flex-wrap justify-center">
       {skills.map((skill, index) => (
-        <div key={index} className=" max-w-sm p-3 flex flex-col">
-          <div className="card bg-opacity-5 bg-secondary/10 flex-grow">
+        <div key={index} className="sm:max-w-sm p-3 flex flex-col">
+          <div className="card bg-secondary/10 flex-grow">
             <div className="card-body">
               <h5 className="card-title mb-2.5 text-primary uppercase">{skill.title}</h5>
               <p className="mb-4">{skill.description}</p>
