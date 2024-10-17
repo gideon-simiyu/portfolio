@@ -5,7 +5,7 @@ export default function Navbar() {
 
   const [pathname, setPathname] = useState("home")
 
-  const changePathname = (path : string) => (event) =>{
+  const changePathname = (path : string) => (_event: any) =>{
     setPathname(path);
   }
 
