@@ -1,6 +1,5 @@
 import AppFooter from "./components/AppFooter";
 import Navbar from "./components/Navbar";
-import SkillsSwitcher from "./components/SkillSwitcher";
 import Contacts from "./pages/Contacts";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
