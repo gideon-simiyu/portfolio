@@ -10,7 +10,7 @@ import Skills from "./pages/Skills";
 function App() {
   return (
     <div className="h-screen flex relative flex-col">
-      <div className="top-0 z-20 start-0 sticky">
+      <div className="">
         <Navbar />
       </div>
 
@@ -19,7 +19,7 @@ function App() {
         id="scrollspy-scrollable-parent-1"
       >
         <div id="scrollspy-1" className="space-y-4">
-          <div className="flex-grow bg-base-100 bg-opacity-80 flex flex-col items-center">
+          <div className="flex-grow bg-base-300 bg-opacity-90 flex flex-col items-center">
             <div className="mt-5" id="home">
               <Introduction />
             </div>

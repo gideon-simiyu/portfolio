@@ -4,14 +4,13 @@ import { FiArrowDownCircle } from "react-icons/fi"
 
 function Introduction() {
   return (
-    <div className="px-4">
+    <div className="px-4 w-screen">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="flex flex-col items-center sm:flex-row mt-12 md:mt-2 justify-center w-screen"
+        className="flex flex-col items-center sm:flex-row mt-12 md:mt-2 justify-center w-full"
       >
-        {/* Left Text Section */}
         <motion.div
           className="basis-1/2 lg:basis-1/3  text-left max-w-xl"
           initial="hidden"
@@ -21,7 +20,6 @@ function Introduction() {
             visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.3 } },
           }}
         >
-          {/* Heading */}
           <motion.h1
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -37,7 +35,6 @@ function Introduction() {
 
           <SkillsSwitcher />
 
-          {/* Download Resume Button */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -51,7 +48,7 @@ function Introduction() {
             <a
               download="Gideon-Simiyu-Resume.pdf"
               href="/files/Gideon-Simiyu-Resume.pdf"
-              className="font-general-medium  text-primary bg-primary/10 flex justify-center items-center w-fit px-6 py-3 border border-primary shadow-lg rounded-lg hover:bg-primary hover:text-white focus:ring-1 focus:ring-primary backdrop-blur duration-300"
+              className="font-general-medium  text-secondary bg-secondary/10 flex justify-center items-center w-fit px-6 py-3 border border-secondary shadow-lg rounded-lg hover:bg-secondary hover:text-white focus:ring-1 focus:ring-primary backdrop-blur duration-300"
               aria-label="Download Resume"
               target="_blank"
             >

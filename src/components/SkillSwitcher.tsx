@@ -50,10 +50,10 @@ function SkillsSwitcher() {
       }}
       className="font-general-medium mt-4 text-gradient text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-relaxed text-secondary"
     >
-      <span className="text-primary ml-2 text-2xl border-b py-1 border-secondary">
-        A {typedText}
+      <span className="text-primary ml-2 text-2xl border-b py-1 border-secondary uppercase">
+        I'm Skilled as a <span className="text-secondary">{typedText}</span>
         <motion.span
-          className="inline-block bg-primary-600 w-1 h-5 lg:h-8 -mb-1 ml-1"
+          className="inline-block bg-secondary w-1 h-5 -mb-1 ml-1"
           animate={{ opacity: [0, 1] }}
           transition={{ repeat: Infinity, duration: 0.8 }}
         />

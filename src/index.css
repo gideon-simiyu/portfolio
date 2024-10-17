@@ -18,7 +18,7 @@
     }
 
     .section-header{
-        @apply text-center my-10 text-3xl uppercase text-gradient font-semibold
+        @apply text-start lg:text-center my-10 text-3xl uppercase text-gradient font-semibold
     }
 }
 
@@ -30,17 +30,10 @@ body{
     overflow: hidden;
 }
 
-#root{
-    overflow: hidden;
-}
 
 html{
     background-image: url("/images/background.webp");
     overflow: hidden;
 }
 
-.bg-image{
-    position: absolute;
-    top: -2rem;
-    z-index: -10;
-}
+  
