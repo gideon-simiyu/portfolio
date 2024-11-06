@@ -88,14 +88,14 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end items-center gap-4">
-        <a
+        {/* <a
           className="btn btn-primary"
           target="_blank"
           href="https://forms.gle/JEMkxySNDsjrsKsb8"
         >
           <span className="text-base-content">Hire me</span>
           <span className="icon-[tabler--arrow-right] text-base-content"></span>
-        </a>
+        </a> */}
 
         <div className="dropdown relative inline-flex sm:hidden rtl:[--placement:bottom-end]">
           <button

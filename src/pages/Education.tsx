@@ -20,7 +20,7 @@ function Experience() {
                   Maseno University
                 </h5>
                 <p>Bachelor of Science in Computer Science</p>
-                <p className="text-secondary">Second class Upper Division</p>
+                {/* <p className="text-secondary">Second class Upper Division</p> */}
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ function Experience() {
                   Bikeke Boys Secondary
                 </h5>
                 <p>Kenya Certificate of Secondary Education</p>
-                <p className="text-secondary">B+</p>
+                {/* <p className="text-secondary">B+</p> */}
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ function Experience() {
                   Bikeke Primary
                 </h5>
                 <p>Kenya Certificate of Primary</p>
-                <p className="text-secondary">352</p>
+                {/* <p className="text-secondary">352</p> */}
               </div>
             </div>
           </div>
